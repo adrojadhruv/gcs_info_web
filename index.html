@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        /* Basic CSS for navbar */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff; /* Text color */
+        }
+
+        .navbar {
+            background-color: #000000d5;
+            color: burlywood;
+            overflow: hidden;
+            text-align: center; /* Aligning the items to the center */
+            size: 10CM;
+        }
+
+        .navbar a {
+            display: inline-block; /* Making navigation items behave like blocks */
+            color: burlywood;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s; /* Adding transition effect */
+            border-bottom: 2px solid transparent; /* Adding bottom border for cool effect */
+            SIZE: 10px;
+        }
+
+        .navbar a:hover {
+            background-color: #000000; /* Changing background color on hover */
+            border-bottom: 2px solid #ff0000; /* Changing border color on hover */
+            color: red;
+        }
+
+        /* Styling for active link */
+        .navbar a.active {
+            background-color: #000000af; /* Changing background color of active link */
+            border-bottom: 2px solid #ff0000b9; /* Changing border color of active link */
+        }
+
+        /* Adding some spacing between navbar items */
+        .navbar a:not(:last-child) {
+            margin-right: 20px;
+        }
+P{
+    padding-right: 4%;
+}
+        /* Content area styling */
+        .content {
+            padding: 25px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+
+        .content img {
+            margin-left: 90%; /* Pushing the image to the right */
+            max-width: 25%; /* Limiting the width of the image */
+            align-items: left;
+            size: 50cm;
+        }
+
+        .service {
+            margin-bottom: 20px;
+            padding-left: 30px;
+            border-left: 4.5px solid #ff0000;
+        }
+
+        h1 {
+            color: red;
+            text-align: center;
+            margin: 40px auto;
+            font-size: 350%;
+        }
+
+        h2 {
+            color: burlywood;
+            padding-left: 20px;
+        }
+
+        p {
+            font-size: 130%;
+            display: flex;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-top: 20px;
+            color: white;
+            
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+        }
+        h3{
+            color: #ff0000;
+            padding-left: 40px;
+            padding-top: 1%;
+
+        }
+        .why{
+            margin-bottom: 5px;
+            padding-left: 30px;
+            border-left: 3.5px solid #ff0000;
+            margin-top: 2%;
+        }
+        .video-player {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #333;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(227, 12, 12, 0.635);
+            width: 150px;
+            height: 80px;
+        }
+
+        #videoPlayer {
+            width: 100%;
+            height: 100%;
+            outline: none; /* Removes outline for a clean look */
+        }
+    </style>
+</head> 
+
+<body>
+
+    <div class="navbar" id="navbar">
+        <a href="index.html">HOME</a>
+        <a href="casestudy.html">CASESTUDY</a>
+        <a href="services.html">SERVICES</a>
+        <a href="1.html">ABOUT</a>
+    </div>
+
+    <h1>GOOGLE CLOUD OVERVIEW</h1>
+    <h3 style="color: #ffffff;padding-left: 0%;">____________________________________________________________________________________________________________________________________________________________________________</h3>
+
+    <!-- Content area -->
+    <div class="content">
+
+        <p>Google Cloud is a suite of cloud computing services offered by Google. It provides a variety of services, including computing power, storage, databases, machine learning, networking, and more, all hosted on Google's infrastructure. Google Cloud Platform (GCP), the core offering within Google Cloud, enables businesses to build, deploy, and scale applications and services globally using Google's highly reliable and secure infrastructure.</p>
+
+        <img src="https://www.logo.wine/a/logo/Google_Cloud_Platform/Google_Cloud_Platform-Logo.wine.svg" alt="Cloud Image" style="margin-left: auto; max-width: 50%;">
+    </div>
+    <h3 style="color: #ffffff;padding-left: 0%;">_________________________________________________________________________________________________________________________________________________________________</h3>
+    <br>
+    <br><br>
+    <div>
+        <h2>OVERVIEW</h2>
+        <div class="content">
+            <p><br>Owner : Google <br>
+                <br>CEO : Thomas Kurian <br>
+                <br>Industry : Web service, cloud computing <br>
+                <br>Revenue : US$26.3 billion (2022) <br>
+                <br>Launched : April 7, 2008 <br>
+                <br>Written in : Java , C++, Python , Go , Ruby <br>
+
+            </p>
+            <img src="image.png" alt="Cloud Image" style="margin-left: auto; max-width: 20%;">
+        </div>
+
+
+        <h2>COMPETITORS OF GCP :</h2>
+        <div class="content">
+            <p>
+                Amazon webservices & Microsoft azure are always being competitor of google cloud platform .
+            </p>
+
+            <img src="https://mms.businesswire.com/media/20171214006289/en/630138/5/LogicMonitor-StudyGraphic-rev-A-2017-12-07_%281%29.jpg" alt="Cloud Image" style="margin-left: auto; max-width: 25%;">
+        </div>
+        <h2>IS GOOGLE CLOUD IS FREE ?</h2>
+        <div class="content">
+            <table style="margin: auto;">
+                <tr>
+                    <th>FREE</th>
+                    <th>PAID</th>
+                </tr>
+                <tr>
+                    <td>Free Tier
+                    </td>
+                    <td>Paid Services
+                    </td>
+                </tr>
+                <tr>
+                    <td>$300 free credits
+                    </td>
+                    <td>Pay as you go 
+                    </td>
+                </tr>
+                <tr>
+                    <td>25+ products</td>
+                    <td>100+ products
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+        <BR><BR></BR></BR>
+        <h2>WHY GOOOGLE CLOUD</h2>
+        <H3 class="why">     PUT YOUR DATA ON WORK</H3>
+        <div class="content">
+       <P>Bring the simplicity, scale, security, and intelligence of Google’s information approach to your organization. Google offers a complete data foundation to unify all workloads and manage the entire data life cycle. The solution is designed to run data anywhere, so you can leverage your data across all clouds, on-premises, and access it in the most popular SaaS apps. This solution is built with and for AI, so you can get the latest tools for machine learning analysis, prompting, tuning, training, and deploying custom foundation models—all connected to your business data.</P>
+    
+       <img src="WHY1.png"
+       alt="Cloud Image" style="margin-left: auto; max-width: 20%;">    
+    </div>
+
+    <H3 class="why">MODERNIZE YOUR INFRASTRUCTURE</H3>
+        <div class="content">
+       <P>You’re ready for AI, but is your cloud? Google Cloud helps developers build quickly, securely, and cost effectively with the next generation of modern infrastructure designed to meet specific workload and industry needs. Get infrastructure that's optimized for AI, container-based applications, traditional enterprise workloads, and high-performance, distributed workloads—all while helping to cut costs and your carbon footprint.</P>
+    
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/gzUev3Dw1gU" frameborder="0" allowfullscreen></iframe>
+        
+    </video>
+    </div>
+    <H3 class="why">CREATE A CULTURE OF INNOVATION</H3>
+        <div class="content">
+       <P>Empower teams of all sizes to do their best work—anywhere, and across a variety of devices. Google Workspace brings together innovative tools preferred by the modern workforce for collaboration and creation, including Gmail, Google Chat, Google Calendar, Google Drive, Google Docs, Google Sheets, and Google Meet. And, we’ve embedded new, easy-to-use generative AI features to help supercharge team productivity. With more than 3 billion monthly active users, Workspace offers the most popular productivity and collaboration software in the world.</P>
+    
+       <iframe width="720" height="315" src="https://www.youtube.com/embed/6XUhRp_EkpM" frameborder="0" allowfullscreen></iframe>
+        
+    </video>
+    </div>
+    <H3 class="why">GET BUILD-IN SECURITY</H3>
+    <div class="content">
+   <P>Benefit from the same security capabilities that Google uses to keep more people and organizations safe online than anyone else. We help organizations transform their cybersecurity programs with frontline intelligence from Mandiant to understand the latest cyber attacks; a modern security operations platform for detecting, investigating, and responding to threats; and a secure-by-design, secure-by-default infrastructure platform with controls to help maintain digital sovereignty.</P>
+
+   <img src="WHY2.png"
+       alt="Cloud Image" style="margin-left: auto; max-width: 20%;"> 
+    
+</video>
+</div>
+
+<H2>GOOGLE CLOUD PRICING</H2>
+<H3 class="why">START RUNNING WOEKLOADS FOR FREE</H3>
+<div class="content"><P>Create an account to evaluate how Google Cloud products perform in real-world scenarios. New customers get $300 in free credits to run, test, and deploy workloads, including Google-recommended, pre-built solutions. All customers can use 20+ products for free, up to monthly usage limits.</P></div>
+    </div>
+<H3 class="why">ONLY PAY FOR WHAT YOU USE</H3>
+<div class="content"><P>With Google Cloud’s pay-as-you-go pricing structure, you only pay for the services you use. No up-front fees. No termination charges. Pricing varies by product and usage—view detailed price list.</P></div>
+    </div>
+    <H3 class="why">SAVE UP TO 57% ON WORKLOADS</H3>
+    <div class="content"><P>Google Cloud saves you money over other providers through automatic savings based on monthly usage and by pre-paying for resources at discounted rates. For example, save up to 57% with committed use discounts on Compute Engine resources like machine types or GPUs.</P></div>
+    </div>
+    <H3 class="why">STAY IN CONTROLS OF YOUR SPENDING</H3>
+
+    <div class="content"><P>Control your spending with budgets, alerts, quota limits, and other free cost management tools. Optimize costs with actionable, AI-powered intelligent recommendations and custom dashboards that display cost trends and forecasts. 
+
+        We’re here to help with free 24/7 billing support.</P>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XR_d8u5AGyM" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <H3 class="why"> ESTIMATE YOUR COSTS </H3><BR>
+    <div class="Content">
+        <P>Understand how your costs can fluctuate based on location, workloads, and other variables with the pricing calculator. Or get a custom quote by connecting with a sales representative.
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/raEbnlIohLE" frameborder="0" allowfullscreen></iframe>
+
+        </P>
+    </div>
+</div>
+<div class="video-player">
+    <video id="videoPlayer" controls autoplay loop ="10000" height="8">
+        <source src="C:/Users/adroj/Documents/cc/videoplayback.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+</div>
+
+</body>
+
+</html>      
