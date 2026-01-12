@@ -1,5 +1,5 @@
 :root {
-    /* Color Palette - Modern Data Theme */
+    /* Color Palette - Unified Blue Theme */
     --bg-body: #050505;
     --surface-1: #121212;
     --surface-2: #1e1e1e;
@@ -7,11 +7,10 @@
     --text-secondary: #a0a0a0;
     --generic-border: #333333;
 
-    /* Brand Colors */
-    --brand-blue: #4285F4;
-    --brand-red: #EA4335;
-    --brand-yellow: #FBBC04;
-    --brand-green: #34A853;
+    /* Single Tone Theme */
+    --primary-color: #4285F4;
+    /* The Core Blue */
+    --primary-glow: rgba(66, 133, 244, 0.4);
 
     /* Config */
     --nav-height: 70px;
@@ -95,7 +94,7 @@ img {
     justify-content: center;
 }
 
-/* Intrinsic Grid - No media queries needed for basic columns */
+/* Intrinsic Grid */
 .grid {
     display: grid;
     gap: 2rem;
@@ -134,7 +133,7 @@ p {
     align-items: center;
     justify-content: center;
     padding: 0.75rem 2rem;
-    background: var(--brand-blue);
+    background: var(--primary-color);
     color: white;
     font-weight: 600;
     border-radius: 50px;
@@ -146,13 +145,13 @@ p {
 
 .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(66, 133, 244, 0.3);
+    box-shadow: 0 10px 20px var(--primary-glow);
 }
 
 .btn-outline {
     background: transparent;
-    border: 2px solid var(--brand-blue);
-    color: var(--brand-blue);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 .btn-outline:hover {
@@ -185,7 +184,7 @@ p {
 }
 
 .logo span {
-    color: var(--brand-blue);
+    color: var(--primary-color);
 }
 
 .nav-links {
@@ -202,7 +201,7 @@ p {
 .nav-links a:hover,
 .nav-links a.active {
     opacity: 1;
-    color: var(--brand-blue);
+    color: var(--primary-color);
 }
 
 .hamburger {
@@ -233,14 +232,14 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, transparent 100%);
     pointer-events: none;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    border-color: var(--brand-blue);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: var(--primary-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
     background: var(--surface-2);
 }
 
@@ -260,7 +259,7 @@ p {
     position: absolute;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(66, 133, 244, 0.15) 0%, transparent 70%);
+    background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
     top: -20%;
     right: -10%;
     z-index: -1;
@@ -308,7 +307,7 @@ p {
     display: block;
     width: 60px;
     height: 4px;
-    background: var(--brand-blue);
+    background: var(--primary-color);
     margin-top: 10px;
     border-radius: 2px;
 }
@@ -321,24 +320,26 @@ p {
     text-align: center;
 }
 
-/* Utilities - Colors */
+/* Utilities - Colors (Consolidated for One Theme) */
 .text-primary {
-    color: var(--brand-blue) !important;
+    color: var(--primary-color) !important;
 }
 
 .text-accent {
-    color: var(--brand-red) !important;
+    color: var(--primary-color) !important;
 }
 
+/* Replaced Red with Blue */
 .text-success {
-    color: var(--brand-green) !important;
+    color: #34A853 !important;
 }
 
+/* Keep success green as functional color only */
 .text-muted {
     color: var(--text-secondary) !important;
 }
 
-/* MOBILE RESPONSIVENESS (The heavy lifting) */
+/* MOBILE RESPONSIVENESS */
 @media (max-width: 900px) {
     .hero-layout {
         grid-template-columns: 1fr;
@@ -365,7 +366,6 @@ p {
         display: block;
     }
 
-    /* Mobile Menu Overlay */
     .nav-links {
         position: fixed;
         background: rgba(0, 0, 0, 0.95);
@@ -380,7 +380,6 @@ p {
         gap: 2rem;
         transition: 0.3s ease-in-out;
         transform: translateY(-100%);
-        /* Start hidden above */
         padding: 2rem;
         z-index: 1000;
     }
@@ -393,8 +392,6 @@ p {
         font-size: 1.5rem;
         font-weight: 700;
     }
-
-    /* Close Button logic is handled by toggling .active on nav-links */
 }
 
 @media (max-width: 480px) {
