@@ -4,391 +4,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SERVICES</title>
-    <style>
-       body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000000;
-            color: #ffffff; /* Text color */
-        }
-
-        .navbar {
-            background-color: #000000d5;
-            color: burlywood;
-            overflow: hidden;
-            text-align: center; /* Aligning the items to the center */
-            size: 10CM;
-        }
-
-        .navbar a {
-            display: inline-block; /* Making navigation items behave like blocks */
-            color: burlywood;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            transition: background-color 0.3s; /* Adding transition effect */
-            border-bottom: 2px solid transparent; /* Adding bottom border for cool effect */
-            SIZE: 10px;
-        }
-
-        .navbar a:hover {
-            background-color: #000000; /* Changing background color on hover */
-            border-bottom: 2px solid #ff0000; /* Changing border color on hover */
-            color: red;
-        }
-
-        /* Styling for active link */
-        .navbar a.active {
-            background-color: #000000af; /* Changing background color of active link */
-            border-bottom: 2px solid #ff0000b9; /* Changing border color of active link */
-        }
-
-        /* Adding some spacing between navbar items */
-        .navbar a:not(:last-child) {
-            margin-right: 20px;
-        }
-
-        /* Content area styling */
-        .content {
-            padding: 25px;
-            text-align: left;
-            display: flex;
-            align-items: center;
-        }
-
-        .content img {
-            margin-left: 90%; /* Pushing the image to the right */
-            max-width: 25%; /* Limiting the width of the image */
-            align-items: left;
-            size: 50cm;
-        }
-
-        .service {
-            margin-bottom: 20px;
-            padding-left: 30px;
-            border-left: 4.5px solid #ff0000;
-        }
-
-        h1 {
-            color: red;
-            text-align: center;
-            margin: 40px auto;
-            font-size: 350%;
-        }
-
-        h2 {
-            color: burlywood;
-            padding-left: 20px;
-        }
-
-        p {
-            font-size: 130%;
-            display: flex;
-        }
-h3{
-    color: #ff0000;
-
-}
-        table {
-            border-collapse: collapse;
-            width: 50%;
-            margin-top: 20px;
-            color: white;
-            
-        }
-
-        th,
-        td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #333;
-        }
-ul{
-    padding-left: 2cm;
-    padding-right: 2cm;
-}
-p{
-    padding-left: 2cm;
-    padding-right: 2cm;
-}
-.video-player {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            background-color: #333;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(227, 12, 12, 0.635);
-            width: 150px;
-            height: 80px;
-        }
-
-        #videoPlayer {
-            width: 100%;
-            height: 100%;
-            outline: none; /* Removes outline for a clean look */
-        }
-
-      
-
-    </style>
+    <title>GCP Services | GCS Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
 
-    <div class="navbar" id="navbar">
-        <a href="index.html">HOME</a>
-        <a href="casestudy.html">CASESTUDY</a>
-        <a href="services.html">SERVICES</a>
-        <a href="1.html">ABOUT</a>
-        
-    </div>
-    <h1>SERVICES PROVIDE BY GCP</h1>
-    <h3 style="color: #ffffff;">_________________________________________________________________________________________________________________________________________________________________
-    </h3><br><br><br>   
-    <h2>key services provided by google cloud plateform:</h2><br>
-    <div class="service">
-        <h3>1. Compute Engine</h3>
-        <p>Infrastructure as a Service (IaaS) offering providing virtual machines for running applications.</p>
-    </div>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">GCS <span>Info</span></div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="casestudy.html">CASE STUDY</a></li>
+                <li><a href="services.html" class="active">SERVICES</a></li>
+                <li><a href="1.html">ABOUT</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="service">
-        <h3>2. App Engine</h3>
-        <p>Platform as a Service (PaaS) offering for building and hosting web applications and services.</p>
-    </div>
+    <header class="container" style="padding: 60px 0; text-align: center;">
+        <h1 class="section-title">Services Provided by GCP</h1>
+        <p class="text-center" style="max-width: 600px; margin: 0 auto; color: var(--text-muted);">
+            Google Cloud Platform offers a wide range of services to meet your computing, storage, and application
+            needs.
+        </p>
+    </header>
 
-    <div class="service">
-        <h3>3. Kubernetes Engine</h3>
-        <p>Managed Kubernetes service for container orchestration.</p>
-    </div>
+    <main class="container">
 
-    <div class="service">
-        <h3>4. Cloud Storage</h3>
-        <p>Scalable object storage for storing and retrieving data.</p>
-    </div>
+        <!-- Key Services Grid -->
+        <section style="margin-bottom: 80px;">
+            <h2 style="margin-bottom: 30px;">Key Services Overview</h2>
+            <div class="grid grid-3">
+                <div class="card fade-in-on-scroll">
+                    <h3>1. Compute Engine</h3>
+                    <p>Infrastructure as a Service (IaaS) offering providing virtual machines for running applications.
+                    </p>
+                </div>
+                <div class="card fade-in-on-scroll">
+                    <h3>2. App Engine</h3>
+                    <p>Platform as a Service (PaaS) offering for building and hosting web applications and services.</p>
+                </div>
+                <div class="card fade-in-on-scroll">
+                    <h3>3. Kubernetes Engine</h3>
+                    <p>Managed Kubernetes service for container orchestration.</p>
+                </div>
+                <div class="card fade-in-on-scroll">
+                    <h3>4. Cloud Storage</h3>
+                    <p>Scalable object storage for storing and retrieving data.</p>
+                </div>
+                <div class="card fade-in-on-scroll">
+                    <h3>5. Cloud SQL</h3>
+                    <p>Fully managed relational database service.</p>
+                </div>
+                <div class="card fade-in-on-scroll">
+                    <h3>6. BigQuery</h3>
+                    <p>Fully managed, serverless data warehouse for analytics and business intelligence.</p>
+                </div>
+                <div class="card fade-in-on-scroll">
+                    <h3>7. Cloud AI</h3>
+                    <p>Suite of machine learning and artificial intelligence services, including APIs for vision,
+                        speech, etc.</p>
+                </div>
+                <div class="card fade-in-on-scroll">
+                    <h3>8. Cloud Functions</h3>
+                    <p>Serverless compute service for running event-driven functions.</p>
+                </div>
+                <div class="card fade-in-on-scroll">
+                    <h3>9. Cloud Networking</h3>
+                    <p>Services for building and managing networks, including VPC and Cloud Load Balancing.</p>
+                </div>
+            </div>
+        </section>
 
-    <div class="service">
-        <h3>5. Cloud SQL</h3>
-        <p>Fully managed relational database service.</p>
-    </div>
+        <!-- Detailed Services Sections -->
+        <div class="grid gap-2">
 
-    <div class="service">
-        <h3>6. BigQuery</h3>
-        <p>Fully managed, serverless data warehouse for analytics and business intelligence.</p>
-    </div>
+            <section id="compute-engine" class="fade-in-on-scroll">
+                <h2>Google Compute Engine</h2>
+                <div class="card" style="margin-top: 20px;">
+                    <p>Delivers virtual machines running in Google's innovative data centers and worldwide fiber
+                        network.</p>
+                    <div class="grid grid-2" style="margin-top: 20px;">
+                        <div>
+                            <h4 class="text-primary">Key Features</h4>
+                            <ul style="list-style: disc; padding-left: 20px; color: var(--text-muted);">
+                                <li>Custom VM shapes, persistent disks, local SSDs.</li>
+                                <li>Global network infrastructure for high performance.</li>
+                                <li>Automatic and committed use discounts.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-primary">Use Cases</h4>
+                            <ul style="list-style: disc; padding-left: 20px; color: var(--text-muted);">
+                                <li>Large-scale workloads and batch processing.</li>
+                                <li>Containerized applications (GKE).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <div class="service">
-        <h3>7. Cloud AI</h3>
-        <p>Suite of machine learning and artificial intelligence services, including APIs for vision, speech, and natural language processing.</p>
-    </div>
+            <section id="kubernetes" class="fade-in-on-scroll">
+                <h2>Google Kubernetes Engine (GKE)</h2>
+                <div class="card" style="margin-top: 20px;">
+                    <p>Managed environment for deploying containerized applications. Run Kubernetes clusters without
+                        managing infrastructure.</p>
+                    <div class="grid grid-2" style="margin-top: 20px;">
+                        <div>
+                            <h4 class="text-primary">Key Features</h4>
+                            <ul style="list-style: disc; padding-left: 20px; color: var(--text-muted);">
+                                <li>Automated provisioning and scaling.</li>
+                                <li>Hybrid and multi-cloud capabilities.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-primary">Use Cases</h4>
+                            <ul style="list-style: disc; padding-left: 20px; color: var(--text-muted);">
+                                <li>Production container apps usually CI/CD pipelines.</li>
+                                <li>Microservices architectures.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <div class="service">
-        <h3>8. Cloud Functions</h3>
-        <p>Serverless compute service for running event-driven functions.</p>
-    </div>
+            <section class="fade-in-on-scroll">
+                <h2>Google Cloud Storage</h2>
+                <div class="card" style="margin-top: 20px;">
+                    <p>Scalable, durable object storage for data of all sizes.</p>
+                    <ul style="list-style: disc; padding-left: 20px; color: var(--text-muted); margin-top: 10px;">
+                        <li>Multiple storage classes (Standard, Nearline, Coldline, Archive).</li>
+                        <li>Encryption at rest and in transit.</li>
+                        <li>Ideal for backups, media streaming, and static websites.</li>
+                    </ul>
+                </div>
+            </section>
 
-    <div class="service">
-        <h3>9. Cloud Networking</h3>
-        <p>Services for building and managing networks, including Virtual Private Cloud (VPC) and Cloud Load Balancing.</p>
-    </div>
+            <section class="fade-in-on-scroll">
+                <h2>Google Cloud SQL</h2>
+                <div class="card" style="margin-top: 20px;">
+                    <p>Fully managed relational database (MySQL, PostgreSQL, SQL Server).</p>
+                    <ul style="list-style: disc; padding-left: 20px; color: var(--text-muted); margin-top: 10px;">
+                        <li>Automated backups and failover.</li>
+                        <li>Built for high availability and scalability.</li>
+                    </ul>
+                </div>
+            </section>
 
+            <section class="fade-in-on-scroll">
+                <h2>Google BigQuery</h2>
+                <div class="card" style="margin-top: 20px;">
+                    <p>Serverless, highly scalable data warehouse for real-time analytics.</p>
+                    <ul style="list-style: disc; padding-left: 20px; color: var(--text-muted); margin-top: 10px;">
+                        <li>Analyze petabytes of data using standard SQL.</li>
+                        <li>Built-in machine learning capabilities.</li>
+                    </ul>
+                </div>
+            </section>
 
-<br><br><br><br>
-<h2>Google Compute Engine</h2>
-    <p>Google Compute Engine delivers virtual machines running in Google's innovative data centers and worldwide fiber network. Compute Engine's tooling and workflow support enable scaling from single instances to global, load-balanced cloud computing.</p>
+            <section class="fade-in-on-scroll">
+                <h2>Google Vertex AI</h2>
+                <div class="card" style="margin-top: 20px;">
+                    <p>Unified platform for building, training, and deploying ML models.</p>
+                    <ul style="list-style: disc; padding-left: 20px; color: var(--text-muted); margin-top: 10px;">
+                        <li>AutoML capabilities.</li>
+                        <li>Support for TensorFlow, PyTorch, and more.</li>
+                    </ul>
+                </div>
+            </section>
 
-    <h3 class="service">Key Features</h3>
-    <ul>
-        <li>Custom VM shapes, persistent disks, local SSDs, and per-second billing.</li>
-        <li>VMs run on Google’s global network infrastructure for high performance, scalability, and availability.</li>
-        <li>Automatic discounts with sustained use discounts and committed use discounts.</li>
-        <li>Integration with Google Cloud's suite of management tools, including Stackdriver for monitoring, Cloud Deployment Manager for orchestration, and Cloud IAM for access control.</li>
-    </ul>
+            <section class="fade-in-on-scroll">
+                <h2>Google Cloud VPC & Load Balancing</h2>
+                <div class="card" style="margin-top: 20px;">
+                    <p>Create secure virtual networks and distribute traffic globally.</p>
+                    <ul style="list-style: disc; padding-left: 20px; color: var(--text-muted); margin-top: 10px;">
+                        <li>Global load balancing (HTTP, TCP, UDP).</li>
+                        <li>Customizable network topology and firewall rules.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
 
-    <h3 class="service">Use Cases</h3>
-    <ul>
-        <li>Compute Engine is ideal for running large-scale workloads, batch processing, and high-performance computing.</li>
-        <li>It's also suitable for running containerized applications using Google Kubernetes Engine (GKE) or other container orchestration tools.</li>
-    </ul>
+        <section style="margin-top: 60px; text-align: center;">
+            <h2>Learn More</h2>
+            <div class="video-wrapper"
+                style="margin-top: 20px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <iframe src="https://www.youtube.com/embed/-K9WW3tKNWk" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
 
-    <h3 class="service">Getting Started</h3>
-    <p>Visit the <a href="https://cloud.google.com/compute">Google Compute Engine documentation</a> for detailed guides on getting started with Compute Engine.</p>
+    </main>
 
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 GCS Info. All rights reserved.</p>
+        </div>
+    </footer>
 
-    <br><br><br><br>
-<h2>Google Kubernetes Engine</h2>
-<p>Google Kubernetes Engine (GKE) is a managed, production-ready environment for deploying containerized applications. It enables you to run Kubernetes clusters without managing the underlying infrastructure, allowing you to focus on your applications.</p>
-
-<h3 class="service">Key Features</h3>
-<ul>
-    <li>Automated provisioning, scaling, and management of Kubernetes clusters.</li>
-    <li>Integration with Google Cloud's networking, storage, and security services.</li>
-    <li>Support for deploying and managing applications using Kubernetes-native tools and APIs.</li>
-    <li>Hybrid and multi-cloud capabilities for running Kubernetes workloads across on-premises, Google Cloud, and other cloud providers.</li>
-</ul>
-
-<h3 class="service">Use Cases</h3>
-<ul>
-    <li>Running containerized applications in production environments with high availability and scalability requirements.</li>
-    <li>Implementing continuous integration and continuous delivery (CI/CD) pipelines using Kubernetes for automated application deployment and scaling.</li>
-    <li>Developing and deploying microservices architectures with Kubernetes for improved agility and resource utilization.</li>
-</ul>
-
-<h3 class="service">Getting Started</h3>
-<p>Visit the <a href="https://cloud.google.com/kubernetes-engine/docs">Google Kubernetes Engine documentation</a> for detailed guides on getting started with Kubernetes Engine.</p>
-
-<br><br><br><br>
-<h2>Google Cloud Storage</h2>
-<p>Google Cloud Storage is a scalable, durable object storage service that allows you to store and retrieve data on Google's infrastructure. It is designed for securing and managing large, unstructured data sets, including multimedia files, backups, and archives.</p>
-
-<h3 class="service">Key Features</h3>
-<ul>
-    <li>Scalable storage buckets with multiple storage classes for optimizing cost and performance.</li>
-    <li>Integration with Google Cloud's network infrastructure for fast and reliable data transfer.</li>
-    <li>Advanced security features, including encryption at rest and in transit, IAM roles, and access controls.</li>
-    <li>Global availability and durability with replication across multiple geographic locations.</li>
-</ul>
-
-<h3 class="service">Use Cases</h3>
-<ul>
-    <li>Storing and serving static website content, including HTML, CSS, and JavaScript files.</li>
-    <li>Backup and archival of data, including database backups, log files, and application data.</li>
-    <li>Media and content distribution, including streaming videos, images, and audio files.</li>
-</ul>
-
-<h3 class="service">Getting Started</h3>
-<p>Visit the <a href="https://cloud.google.com/storage/docs">Google Cloud Storage documentation</a> for detailed guides on getting started with Cloud Storage.</p>
-
-<br><br><br><br>
-<h2>Google Cloud SQL</h2>
-<p>Google Cloud SQL is a fully managed relational database service that makes it easy to set up, maintain, manage, and administer relational databases on Google Cloud Platform. It supports MySQL, PostgreSQL, and SQL Server.</p>
-
-<h3 class="service">Key Features</h3>
-<ul>
-    <li>Fully managed database service with automated backups, replication, and failover.</li>
-    <li>Integration with Google Cloud's infrastructure for high availability, scalability, and security.</li>
-    <li>Support for popular relational database engines, including MySQL, PostgreSQL, and SQL Server.</li>
-    <li>Managed updates and patches to ensure database security and performance.</li>
-</ul>
-
-<h3 class="service">Use Cases</h3>
-<ul>
-    <li>Building web applications, mobile apps, and e-commerce platforms that require relational databases.</li>
-    <li>Migrating existing databases to the cloud for better scalability, reliability, and cost-effectiveness.</li>
-    <li>Developing and testing applications with a fully managed database service.</li>
-</ul>
-
-<h3 class="service">Getting Started</h3>
-<p>Visit the <a href="https://cloud.google.com/sql/docs">Google Cloud SQL documentation</a> for detailed guides on getting started with Cloud SQL.</p>
-<br><br><br><br>
-<h2>Google BigQuery</h2>
-<p>Google BigQuery is a fully managed, serverless, and highly scalable data warehouse that enables users to analyze and query large datasets in real-time using SQL. It is part of Google Cloud's Big Data and Machine Learning solutions.</p>
-
-<h3 class="service">Key Features</h3>
-<ul>
-    <li>Serverless data warehouse with no infrastructure management required.</li>
-    <li>Highly scalable and fast data analytics platform for processing terabytes to petabytes of data.</li>
-    <li>Integration with Google Cloud's ecosystem for seamless data ingestion, transformation, and visualization.</li>
-    <li>Support for standard SQL queries and real-time data analysis.</li>
-</ul>
-
-<h3 class="service">Use Cases</h3>
-<ul>
-    <li>Performing ad-hoc analysis on large datasets for business intelligence and decision-making.</li>
-    <li>Building data-driven applications and services that require real-time insights.</li>
-    <li>Conducting machine learning and AI experiments with large-scale datasets.</li>
-</ul>
-
-<h3 class="service">Getting Started</h3>
-<p>Visit the <a href="https://cloud.google.com/bigquery/docs">Google BigQuery documentation</a> for detailed guides on getting started with BigQuery.</p>
-<br><br><br><br>
-<h2>Google Vertex AI</h2>
-<p>Google Vertex AI is a managed machine learning (ML) platform that enables developers and data scientists to accelerate the development and deployment of AI models at scale. It provides a unified platform for building, training, and deploying machine learning models.</p>
-
-<h3 class="service">Key Features</h3>
-<ul>
-    <li>Unified platform for ML development, training, and deployment with pre-built components.</li>
-    <li>AutoML capabilities for building custom ML models without extensive coding or ML expertise.</li>
-    <li>Integration with Google Cloud's ecosystem for seamless data ingestion, preprocessing, and model serving.</li>
-    <li>Support for TensorFlow, PyTorch, and other popular ML frameworks.</li>
-</ul>
-
-<h3 class="service">Use Cases</h3>
-<ul>
-    <li>Building and deploying machine learning models for image and text classification, object detection, and natural language processing.</li>
-    <li>Automating repetitive tasks and improving business processes with AI-driven solutions.</li>
-    <li>Enabling predictive analytics and personalized recommendations for enhancing user experiences.</li>
-</ul>
-
-<h3 class="service">Getting Started</h3>
-<p>Visit the <a href="https://cloud.google.com/vertex-ai/docs">Google Vertex AI documentation</a> for detailed guides on getting started with Vertex AI.</p>
-<br><br><br><br>
-<h2>Google Cloud VPC (Virtual Private Cloud)</h2>
-<p>Google Cloud VPC allows you to create, manage, and connect to virtual networks in Google Cloud Platform. It provides a secure and isolated environment for your cloud resources, allowing you to define network topology, control access, and securely connect your cloud-based applications and services.</p>
-
-<h3 class="service">Key Features</h3>
-<ul>
-    <li>Customizable virtual network configurations, including IP address ranges, subnets, and routing options.</li>
-    <li>Security controls such as firewall rules, network tags, and VPN (Virtual Private Network) options for secure communication.</li>
-    <li>Integration with other Google Cloud services for seamless deployment and management of resources within your VPC.</li>
-    <li>Global connectivity with options for private communication between regions and hybrid connectivity with on-premises infrastructure.</li>
-</ul>
-
-<h3 class="service">Use Cases</h3>
-<ul>
-    <li>Creating isolated environments for different applications or departments within your organization.</li>
-    <li>Implementing secure communication channels for transferring data between cloud resources and on-premises systems.</li>
-    <li>Deploying multi-tiered architectures with separate subnets for web servers, application servers, and databases.</li>
-</ul>
-
-<h3 class="service">Getting Started</h3>
-<p>Visit the <a href="https://cloud.google.com/vpc/docs">Google Cloud VPC documentation</a> for detailed guides on getting started with Virtual Private Cloud.</p>
-<br><br><br><br>
-<h2>Google Cloud Load Balancing</h2>
-<p>Google Cloud Load Balancing enables you to distribute incoming network traffic across multiple instances or backend services to ensure high availability and reliability of your applications and services. It automatically scales with increased traffic and provides advanced features for optimizing performance and managing traffic efficiently.</p>
-
-<h3 class="service">Key Features</h3>
-<ul>
-    <li>Global load balancing with support for HTTP(S), TCP, and UDP traffic.</li>
-    <li>Integrated with Google Cloud's network infrastructure for high availability and low latency.</li>
-    <li>Health checking and auto-scaling to dynamically adjust capacity based on traffic patterns and instance health.</li>
-    <li>Content-based routing and session affinity for directing traffic to specific backend services or instances.</li>
-</ul>
-
-<h3 class="service">Use Cases</h3>
-<ul>
-    <li>Ensuring fault tolerance and reliability for web applications, APIs, and microservices.</li>
-    <li>Improving application performance by distributing traffic to the nearest available instance or region.</li>
-    <li>Managing traffic spikes and handling sudden increases in demand without service degradation.</li>
-</ul>
-
-<h3 class="service">Getting Started</h3>
-<p style="padding-bottom: 2cm;">Visit the <a href="https://cloud.google.com/load-balancing/docs">Google Cloud Load Balancing documentation</a> <br>more details.
-    <br><br>
-    <br><br><br><br><br><br>        
-    <br><br>
-    <h3 style="color: #ffffff;">_________________________________________________________________________________________________________________________________________________________________
-  
-    <h2 style="text-align:center;">video to learn about google cloud services</h2><br><br>
-    <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/-K9WW3tKNWk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="padding-left: 11cm;"></iframe>
-    </div>
-    
-    <div class="content"><br><br>watch given video and full playlist to learn and understand google cloud services .</div>
-    <div class="video-player">
-        <video id="videoPlayer" controls autoplay loop ="10000" height="8">
-               <source src="videoplayback.mp4" type="video/mp4">
-            Your browser does not support the video element.
-        </video>
-    </div>
-
+    <script src="script.js"></script>
 </body>
-
 
 </html>
